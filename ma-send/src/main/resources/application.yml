@@ -1,0 +1,15 @@
+spring:
+  application:
+
+    name: simplecrud
+  datasource:
+    url: jdbc:mysql://47.101.51.192/test?characterEncoding=utf-8
+    driver-class-name: com.mysql.jdbc.Driver
+    type: com.zaxxer.hikari.HikariDataSource
+    username: root
+    password: agent123
+  jpa:
+    database: mysql
+    show-sql: true
+    open-in-view: false
+
