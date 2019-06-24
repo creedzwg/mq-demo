@@ -1,0 +1,61 @@
+{
+
+  "id": "56",
+  "description":"取消操作的描述",
+  "entityData":[
+
+    {
+      "cancelType":"create",
+      "className":"cn.keking.project.entity.User1",
+      "id":"1"
+    },
+    {
+      "cancelType":"create",
+      "className":"cn.keking.project.entity.User2",
+      "id":"2"
+    },
+    {
+      "cancelType":"update",
+      "className":"cn.keking.project.entity.User1",
+      "beforeData":{
+        "age": "108",
+        "id": 4,
+        "passWord": "普通回滚",
+        "userName": "普通回滚"
+      }
+    },
+    {
+      "cancelType":"update",
+      "className":"cn.keking.project.entity.User2",
+      "beforeData":{
+        "age": "14",
+        "id": 7,
+        "jpaVersion": 2,
+        "passWord": "回滚",
+        "userName": "回滚"
+      }
+    },
+    {
+      "cancelType":"delete",
+      "className":"cn.keking.project.entity.User1",
+      "beforeData":{
+        "age": "哈哈",
+        "id": 4,
+        "passWord": "delete 还原",
+        "userName": "delete 还原"
+      }
+    },
+    {
+      "cancelType":"delete",
+      "className":"cn.keking.project.entity.User2",
+      "beforeData":{
+        "age": "delete 还原",
+        "id": 100,
+        "jpaVersion": 2,
+        "passWord": "delete 还原",
+        "userName": "delete 还原"
+      }
+    }
+  ]
+
+}

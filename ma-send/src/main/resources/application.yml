@@ -3,7 +3,7 @@ spring:
 
     name: simplecrud
   datasource:
-    url: jdbc:mysql://47.101.51.192/test?characterEncoding=utf-8
+    url: jdbc:mysql://47.101.51.192/test?characterEncoding=utf-8&useSSL=false
     driver-class-name: com.mysql.jdbc.Driver
     type: com.zaxxer.hikari.HikariDataSource
     username: root
@@ -12,4 +12,11 @@ spring:
     database: mysql
     show-sql: true
     open-in-view: false
-
+    hibernate:
+      ddl-auto: update
+    database-platform: org.hibernate.dialect.MySQL5InnoDBDialect
+logging:
+  level:
+    -com.zwg.mqconsumer: debug
+server:
+  port: 9899

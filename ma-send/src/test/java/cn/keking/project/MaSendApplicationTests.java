@@ -1,4 +1,4 @@
-package com.zwg.masend;
+package cn.keking.project;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
